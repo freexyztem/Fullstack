@@ -1,0 +1,26 @@
+8-8_vecinosEdificio -> Plantas con numero igual
+//	El número de vecinos en la planta 3 es: 8
+//	El número de vecinos en la planta 3 es: 9
+//	El número de vecinos en la planta 3 es: 9
+
+
+8-1_Array -> El ejemplo es 36 pero los números son de Azar(20)
+//	Crear un array de dimensión 5, inicializado con números aleatorios (función azar), del 0
+//	al 19. Pedir por consola un valor de 0 a 4, y mostrar el número guardado en esa posición
+//	del array (entero). Escribir en consola también el array.
+//	Nota: si el número que introduce el usuario es mayor a 4, el programa debería mostrar
+//	el array y avisar del error: "La longitud del array es de 0 a 4, por lo que la posición [5] no es válida"
+//	Resultado (ejemplo array 2 0 36 15 9 y posición 2):
+//		2 0 36 15 9
+//		El número del array en la posición [2] es el 36
+
+
+
+1-4_TiendaRopa -> dice que si se compra mas de 3 son 20% pero en el ejemplo resuelto ponen 25%
+	//	En una tienda de ropa, hay rebajas. Si compramos 1 prenda, nos hacen un descuento 
+	//	del 15%; si compramos 3, nos hacen un descuento del 25%; y si compramos más de 3, 
+	//	nos hacen el descuento del 20% y, además, nos regalan una prenda más.
+	//	El precio de todas las prendas es el mismo, 10 euros. Habría que pedir por pantalla 
+	//	cuántas prendas queremos comprar (entero) y calcular: el precio total (real) y el número 
+	//	de prendas (entero) que nos llevamos (recordad que, si compramos más de 3 prendas, 
+	//	nos llevaríamos 1 de regalo
