@@ -17,3 +17,29 @@ peliculas = np.array(
     ]
 )
 print(peliculas)
+# --- genero mas popular ---
+
+# se selecciona la columna de generos y se cuentan las ocurrencias de cada genero
+generos, conteo = np.unique(peliculas[:, 1], return_counts=True)
+
+# se ordenan los conteos de mayor a menor y se obtiene el indice del genero mas popular
+conteos = np.argsort(conteo)[::-1]
+
+# se obtiene el genero mas popular usando el indice 0 del arreglo ordenado descendentemente
+genero_mas_popular = generos[conteos[0]]
+
+# imprime el genero mas popular
+print("Género más popular:", genero_mas_popular)
+
+
+# --- agrupamos las peliculas por decadas ---
+
+# se selecciona la columna de años y se agrupan por decadas usando floor division y multiplicacion para obtener el año de la decada con np.unique
+decadas, conteo_decadas = np.unique(
+    (peliculas[:, 3].astype(int) // 10) * 10, return_counts=True
+)
+
+# se imprime el resultado de las decadas y su conteo
+print("Décadas y conteo de películas:")
+for decada, conteo in zip(decadas, conteo_decadas):
+    print(f"{decada}s: {conteo} películas")
